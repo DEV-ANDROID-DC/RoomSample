@@ -61,4 +61,18 @@ public class WordAdapter extends RecyclerView.Adapter<WordAdapter.MyViewHolder> 
        wordList = word;
        notifyDataSetChanged();
     }
+
+    public void deleteWord(int position) {
+        wordList.remove(position);
+        notifyItemRemoved(position);
+    }
+
+    public void restoreWord(int position, Word word) {
+        wordList.add(position,word);
+        notifyItemInserted(position);
+    }
+
+    public Word getWordAtPosition(int position) {
+        return wordList.get(position);
+    }
 }

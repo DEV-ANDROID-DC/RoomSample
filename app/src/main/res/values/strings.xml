@@ -3,4 +3,6 @@
     <string name="word_empty">Word is not Saved, its empty</string>
     <string name="new_word">New Word</string>
     <string name="add_word">Add Word</string>
+    <string name="undo">UNDO</string>
+    <string name="item_remove_text">Item was removed from the list..</string>
 </resources>
